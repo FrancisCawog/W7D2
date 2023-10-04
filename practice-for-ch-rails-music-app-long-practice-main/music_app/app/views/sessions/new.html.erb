@@ -1,0 +1,14 @@
+<div id="session-form-container">
+    <h2 class= "login-heading">Login</h2>
+
+    <form action= "<%= session_url %>" method="post" class="login-form">
+        <%= auth_token %>
+        <label for="email" class="login-input">Email</label> 
+        <input type="text" name="user[email]" id="email" class="login-input" value="<%= @user.email %>">
+
+        <label for="password" class="login-input">Password</label>
+        <input type="password" name="user[password]" id="password" class="login-input">
+
+        <input type="submit" value="Login" class="login-button">
+    </form>
+</div>

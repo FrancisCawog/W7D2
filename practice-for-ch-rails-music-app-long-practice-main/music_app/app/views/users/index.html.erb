@@ -1,0 +1,9 @@
+<h1 class="users-heading">Here are all our users:</h1>
+
+<div class="user-tiles">
+  <% @users.each do |user| %>
+    <div class="user-tile">
+      <h3><%= user.email %></h3>
+    </div>
+  <% end %>
+</div>
